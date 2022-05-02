@@ -28,7 +28,7 @@ For testing purposes you can view a [database dump of all accounts here]
 1. Install [Node.js](https://nodejs.org/) & [MongoDB](https://www.mongodb.org/) if you haven't already.
 2. Clone this repository and install its dependencies.
 
-		> git clone git://github.com/braitsch/node-login.git node-login
+		> git clone https://github.com/JohanPosso/Login-con-autenticacion.git
 		> cd node-login
 		> npm install
 
@@ -46,7 +46,7 @@ For testing purposes you can view a [database dump of all accounts here]
 
 ### Password Retrieval
 
-To enable the password retrieval feature it is recommended that you create environment variables for your credentials instead of hard coding them into the [email dispatcher module](https://github.com/braitsch/node-login/blob/master/server/utils/emailjs.js).
+To enable the password retrieval feature it is recommended that you create environment variables for your credentials instead of hard coding them into the [email dispatcher module].
 
 To do this on OSX you can simply add them to your .profile or .bashrc file.
 
