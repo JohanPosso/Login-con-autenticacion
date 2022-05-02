@@ -1,0 +1,36 @@
+
+extends layout
+
+block content
+	#login.center-vertical
+		form.card.card-body.bg-light(method='post')
+			h2 Hola!
+			h6 Por favor, ingrese a su cuenta
+			.form-group
+				label Usuario
+				input.form-control(type='text', id='user-tf', name='user')
+			.form-group
+				label Contraseña
+				input.form-control(type='password', id='pass-tf', name='pass')
+			#row1
+				button(type='button')#btn_remember.btn.btn-light.btn-left
+					span.fa.fa-check-square
+					| Recuerdame
+				button(type='submit')#btn_sign_in.btn.btn-primary
+					span.fa.fa-lock
+					| Iniciar sesión
+			hr
+			.btm-links
+				#forgot-password
+					a(href='#') ¿Olvidaste tu contraseña?
+				#create-account
+					a(href='/signup') Crea una cuenta
+
+	include modals/alert
+	include modals/lost-password
+
+block scripts
+	script(src='/js/views/login.js')
+	script(src='/js/controllers/loginController.js')
+	script(src='/js/form-validators/loginValidator.js')
+	script(src='/js/form-validators/emailValidator.js')
